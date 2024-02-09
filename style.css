@@ -29,37 +29,47 @@ main {
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
   border-radius: .5rem;
   padding: 4.8rem 6.4rem 6.4rem;
-  width: min(42.8rem, 90%);
+  width: 42rem;
   margin-top: -8rem;
   text-align: center;
   
 }
 
-.hide {
-display: none;
-}
 
+
+.screen1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  padding: 3rem;
+}
 
 h1 {
 font-family: 'Montserrat', sans-serif;
 font-size: 2.4rem;
-margin-bottom: 1.6rem;
+color: #34355B;
+text-align: center;
+font-weight: 700;
+line-height: normal;
+
+
 }
 
 h1,
 p {
 color: #34355b;
+margin-bottom: 4rem;
+}
+
+.screen1 img {
+  text-align: center;
 }
 
 
 #fortuneCookie {
 width: 300px;
-height: 200px;
-background-image: url(./assets/fortuneCookie.svg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: contain;
-margin: 20px 30px 0px 0px;
 
 }
 
@@ -88,10 +98,7 @@ animation-iteration-count: infinite;
 #crackedCookie {
 width: 300px;
 height: 200px;
-background-image: url(./assets/openedCookie.svg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+
 }
 
 
@@ -110,7 +117,9 @@ button:hover {
 background-color: #d37b01;
 }
 
-
+.hide {
+  display: none;
+  }
 
 
 @keyframes toFadeIn {
